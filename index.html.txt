@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSML Survey Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>CSML Survey Form</h1>
+
+<form id="surveyForm">
+
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Are you a student?</label>
+<select id="studentSelect">
+<option value="">Select</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+</select>
+
+<div id="studentQuestion" class="hidden">
+<label>Which course are you studying?</label>
+<input type="text" placeholder="Course name">
+</div>
+
+<div id="professionQuestion" class="hidden">
+<label>What is your profession?</label>
+<input type="text" placeholder="Your profession">
+</div>
+
+<label>How satisfied are you with CSML?</label>
+<select>
+<option>Excellent</option>
+<option>Good</option>
+<option>Average</option>
+<option>Poor</option>
+</select>
+
+<button type="submit">Submit</button>
+
+</form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+const studentSelect = document.getElementById("studentSelect");
+const studentQuestion = document.getElementById("studentQuestion");
+const professionQuestion = document.getElementById("professionQuestion");
+
+studentSelect.addEventListener("change", function(){
+
+if(this.value === "yes"){
+studentQuestion.style.display = "block";
+professionQuestion.style.display = "none";
+}
+
+else if(this.value === "no"){
+professionQuestion.style.display = "block";
+studentQuestion.style.display = "none";
+}
+
+else{
+studentQuestion.style.display = "none";
+professionQuestion.style.display = "none";
+}
+
+});
+
+document.getElementById("surveyForm").addEventListener("submit", function(e){
+e.preventDefault();
+alert("Survey Submitted Successfully!");
+});
