@@ -36,7 +36,7 @@
 <input type="text" placeholder="Your profession">
 </div>
 
-<label>How satisfied are you with CSML?</label>
+<label>How satisfied are you with JAVASCRIPT?</label>
 <select>
 <option>Excellent</option>
 <option>Good</option>
